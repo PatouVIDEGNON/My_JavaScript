@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="select2.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-   
-    <title>Select2</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+  <script src="node_modules/jquery/dist/jquery.min.js" defer></script>
+  <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
+  <script src="bower_components/select2/dist/js/select2.min.js" defer></script>
+  <script src="select2.js" defer></script>
+
+
+  <title>Select2</title>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Select2</h1>
-        <select class="js-example-basic-single" name="state">
-            <option value="AL">Alabama</option>
-              ...
-            <option value="WY">Wyoming</option>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>
+          Select2 Unique
+        </h1>
+        <label for="id_label_single">
+          Selectionner, ou rechercher un seul element
+          <select class="js-example-basic-single js-states form-control" id="id_label_single" style="width: 100%">
+            <option value="cotonou">Cotonou</option>
+            <option value="abomey-Calavi">Abomey Calavi</option>
+            <option value="porto-Novo">Porto Novo</option>
+            <option value="ouidah">Ouidah</option>
+            <option value="come">Comè</option>
+            <option value="lokossa">Lokossa</option>
+            <option value="parakou">Parakou</option>
+            <option value="azovè">Azovè</option>
+            <option value="malanville">Malanville</option>
           </select>
+        </label>
+      </div>
+      <div class="col">
+        <h1>
+          Select2 Mulitple
+        </h1>
+        <label for="id_label_multiple">
+          Selectionner ou rechercher un ou plusieurs elements
+          <select class="js-example-basic-multiple js-states form-control" id="id_label_multiple" multiple="multiple" style="width: 100%">
+            <option value="cotonou">Cotonou</option>
+            <option value="abomey-Calavi">Abomey Calavi</option>
+            <option value="porto-Novo">Porto Novo</option>
+            <option value="ouidah">Ouidah</option>
+            <option value="come">Comè</option>
+            <option value="lokossa">Lokossa</option>
+            <option value="parakou">Parakou</option>
+            <option value="azovè">Azovè</option>
+            <option value="malanville">Malanville</option>
+          </select>
+        </label>
+      </div>
     </div>
+  </div>
 </body>
+
 </html>
